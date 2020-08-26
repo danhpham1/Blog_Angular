@@ -1,0 +1,121 @@
+<div class="content-area content" *ngIf="!isLoad && post && relatePosts">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 mt-0 content-left">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 blog-content" *ngIf="!isLoad">
+                        <div class="blog-title">
+                            <h5>{{post.title}}</h5>
+                            <p>
+                                <a routerLink="/">Home</a> <i class="fa fa-chevron-right"></i>
+                                <a routerLink="/category/{{post.nameTitle}}">{{post.nameTitle}}</a>
+                            </p>
+                            <p>
+                                <b>by</b> Noob Boy &ensp;
+                                <i class="fa fa-chevron-right"></i> &ensp;
+                                <b>on</b> {{post.date}}
+                            </p>
+                        </div>
+                        <hr />
+                        <div class="blog-content-main" [innerHTML]="contentPost">
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 blog-related pl-0 pr-0 mt-2">
+                        <div class="realted-posts">
+                            <div class="title-right">
+                                related posts
+                            </div>
+                            <div class="contentsub-right">
+                                <div class="row">
+
+                                    <div class="col-lg-6 col-md-6 col-sm-12" *ngFor="let relatePost of relatePosts">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="box">
+                                                <div class="img-contain"
+                                                    [ngStyle]="{'width': '160px','height':'100px'}">
+                                                    <a href="/post/{{relatePost._id}}">
+                                                        <img src="https://immense-eyrie-97426.herokuapp.com/img/logo/{{relatePost.logo}}"
+                                                            alt="" [ngStyle]="{'width': '160px','height':'100px'}" />
+                                                    </a>
+                                                </div>
+                                                <div class="news-content">
+                                                    <a href="/post/{{relatePost._id}}">
+                                                        <p class="text-left">
+                                                            {{relatePost.title}}
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-lg-12 col-md-12 blog-comment pl-0 pr-0 mt-2">
+                        <div class="blog-comment">
+                            <div class="title-right">
+                                <i class="fa fa-comment fa-1x mr-1 text-success"></i>Comment
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-login hide">
+                                    <button>Login to comment post</button>
+                                </div>
+                                <div>
+                                    <div class="comment">
+                                        <div class="comment-title">
+                                            <p>Admin</p>
+                                            <p>7/9/2020 9:48AM</p>
+                                        </div>
+                                        <div class="comment-sub">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                elit. Reiciendis, magnam?Lorem ipsum dolor sit, amet
+                                                consectetur adipisicing elit. Libero, a. Lorem ipsum
+                                                dolor sit, amet consectetur adipisicing elit. A,
+                                                natus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="comment-title">
+                                            <p>Admin</p>
+                                            <p>7/9/2020 9:48AM</p>
+                                        </div>
+                                        <div class="comment-sub">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                elit. Reiciendis, magnam?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="comment-title">
+                                            <p>Admin</p>
+                                            <p>7/9/2020 9:48AM</p>
+                                        </div>
+                                        <div class="comment-sub">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                elit. Reiciendis, magnam?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <form action="" class="form-comment">
+                                        <textarea name="" id="" cols="70" rows="4"
+                                            placeholder="Enter your comment....."></textarea>
+                                        <button>Comment</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

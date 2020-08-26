@@ -9,6 +9,6 @@ export class CategoryService {
   constructor(private http: HttpClient) { }
 
   getCategory() {
-    return this.http.get("http://localhost:3000/api/category/getAllCategory");
+    return this.http.get("https://immense-eyrie-97426.herokuapp.com/api/category/getAllCategory");
   }
 }

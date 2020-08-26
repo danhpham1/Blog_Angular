@@ -286,11 +286,11 @@ p {
 }
 
 /* category right */
-.category-right {
+ .category-right {
   text-align: left;
 }
 
-.category-right li {
+ .category-right li {
   padding: 10px 10px;
   margin-bottom: 15px;
 }
@@ -300,7 +300,7 @@ a {
   text-transform: uppercase;
 }
 
-.category-right li a:hover {
+ .category-right li a:hover {
   color: #33bcf3 !important;
   transition: ease-in 0.3s;
 }

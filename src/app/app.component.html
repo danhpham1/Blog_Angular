@@ -1,14 +1,21 @@
-<app-header></app-header>
-<div class="content-area">
-    <app-content-top></app-content-top>
-    <div class="container content">
-        <div class="row">
-            <div class="col-lg-8 col-md-12 content-left">
-            </div>
-            <div class="col-lg-4 col-md-12 content-left">
-                <app-main-right></app-main-right>
+<ng-container *ngIf="!isLoad">
+    <app-header></app-header>
+    <div class="content-area">
+        <app-content-top *ngIf="!currentUrl"></app-content-top>
+        <div class="container content">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 content-left">
+                    <!-- <app-main></app-main> -->
+                    <!-- <app-category></app-category> -->
+                    <router-outlet></router-outlet>
+                    <ngx-spinner>
+                    </ngx-spinner>
+                </div>
+                <div class="col-lg-4 col-md-12 content-right">
+                    <app-main-right></app-main-right>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<app-footer></app-footer>
+    <app-footer></app-footer>
+</ng-container>
