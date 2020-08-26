@@ -11,9 +11,9 @@
 
     <div class="blog-news">
         <div class="title">
-            <a href="/category/news">Blog News</a>
+            <a routerLink="/category/news">Blog News</a>
             <div class="view-all">
-                <a href="/category/news"><i class="fa fa-bars"><span>All News</span></i></a>
+                <a routerLink="/category/news"><i class="fa fa-bars"><span>All News</span></i></a>
             </div>
         </div>
         <div class="row blog-news-box">
@@ -22,13 +22,13 @@
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="box">
                         <div class="img-contain" [ngStyle]="{'width':'120px','height':'120px'}">
-                            <a href="/post/{{blogNew._id}}">
+                            <a routerLink="/post/{{blogNew._id}}">
                                 <img src="https://immense-eyrie-97426.herokuapp.com/img/logo/{{blogNew.logo}}" alt=""
                                     [ngStyle]="{'width':'120px','height':'120px'}" />
                             </a>
                         </div>
                         <div class="news-content">
-                            <a href="/post/{{blogNew._id}}">
+                            <a routerLink="/post/{{blogNew._id}}">
                                 <p>
                                     {{blogNew.title}}
                                 </p>
@@ -45,9 +45,9 @@
     <div class="row css-html-box">
         <div class="col-lg-6 col-md-6 col-sm-12" style="padding: 0;">
             <div class="title title-left">
-                <a href="/category/CSS">css</a>
+                <a routerLink="/category/CSS">css</a>
                 <div class="view-all">
-                    <a href="/category/CSS">
+                    <a routerLink="/category/CSS">
                         <i class="fa fa-bars"><span>All News</span></i>
                     </a>
                 </div>
@@ -59,13 +59,13 @@
                     <div class="col-lg-12 col-md-12" [ngStyle]="{'height': '400px'}" *ngIf="i == 0">
                         <div class="box clear">
                             <div class="img-contain" [ngStyle]="{'height': '180px'}">
-                                <a href="/post/{{cssBlog._id}}">
+                                <a routerLink="/post/{{cssBlog._id}}">
                                     <img src="https://immense-eyrie-97426.herokuapp.com/img/logo/{{cssBlog.logo}}"
                                         alt="" [ngStyle]="{'height': '180px'}" />
                                 </a>
                             </div>
                             <div class="header-css">
-                                <a href="/post/{{cssBlog._id}}">
+                                <a routerLink="/post/{{cssBlog._id}}">
                                     <h5>{{cssBlog.title}}</h5>
                                 </a>
                                 <i class="fa fa-clock-o">{{cssBlog.date}}</i>
@@ -80,13 +80,13 @@
                     <div class="col-lg-12 col-md-12" *ngIf="i > 0">
                         <div class="box">
                             <div class="img-contain" [ngStyle]="{'width':'150px','height':'120px'}">
-                                <a href="/post/{{cssBlog._id}}">
+                                <a routerLink="/post/{{cssBlog._id}}">
                                     <img src="https://immense-eyrie-97426.herokuapp.com/img/logo/{{cssBlog.logo}}"
                                         alt="" [ngStyle]="{'width':'150px','height':'120px'}" />
                                 </a>
                             </div>
                             <div class="news-content">
-                                <a href="/post/{{cssBlog._id}}">
+                                <a routerLink="/post/{{cssBlog._id}}">
                                     <p>
                                         {{cssBlog.title}}
                                     </p>
@@ -104,9 +104,9 @@
 
         <div class="col-lg-6 col-md-6 col-sm-12" style="padding: 0;">
             <div class="title title-left">
-                <a href="/category/HTML">HTML</a>
+                <a routerLink="/category/HTML">HTML</a>
                 <div class="view-all">
-                    <a href="/category/HTML">
+                    <a routerLink="/category/HTML">
                         <i class="fa fa-bars"><span>All News</span></i>
                     </a>
                 </div>
@@ -118,13 +118,13 @@
                     <div class="col-lg-12 col-md-12" [ngStyle]="{'height': '400px'}" *ngIf="i == 0">
                         <div class="box clear">
                             <div class="img-contain" [ngStyle]="{'height': '180px'}">
-                                <a href="/post/{{htmlBlog._id}}">
+                                <a routerLink="/post/{{htmlBlog._id}}">
                                     <img src="https://immense-eyrie-97426.herokuapp.com/img/logo/{{htmlBlog.logo}}"
                                         alt="" [ngStyle]="{'height': '180px'}" />
                                 </a>
                             </div>
                             <div class="header-css">
-                                <a href="/post/{{htmlBlog._id}}">
+                                <a routerLink="/post/{{htmlBlog._id}}">
                                     <h5>{{htmlBlog.title}}</h5>
                                 </a>
                                 <i class="fa fa-clock-o">{{htmlBlog.date}}</i>
@@ -139,13 +139,13 @@
                     <div class="col-lg-12 col-md-12" *ngIf="i > 0">
                         <div class="box">
                             <div class="img-contain" [ngStyle]="{'width':'150px','height':'120px'}">
-                                <a href="/post/{{htmlBlog._id}}">
+                                <a routerLink="/post/{{htmlBlog._id}}">
                                     <img src="https://immense-eyrie-97426.herokuapp.com/img/logo/{{htmlBlog.logo}}"
                                         alt="" [ngStyle]="{'width':'150px','height':'120px'}" />
                                 </a>
                             </div>
                             <div class="news-content">
-                                <a href="/post/{{htmlBlog._id}}">
+                                <a routerLink="/post/{{htmlBlog._id}}">
                                     <p>
                                         {{htmlBlog.title}}
                                     </p>
@@ -164,9 +164,9 @@
 
     <div class="javascript-box">
         <div class="title">
-            <a href="/category/Javascript">Javascript</a>
+            <a routerLink="/category/Javascript">Javascript</a>
             <div class="view-all">
-                <a href="/category/Javascript"><i class="fa fa-bars"><span>All News</span></i></a>
+                <a routerLink="/category/Javascript"><i class="fa fa-bars"><span>All News</span></i></a>
             </div>
         </div>
 
@@ -175,12 +175,12 @@
             <div class="col-lg-6 col-md 6 col-sm-12 javascript-header" *ngIf="isLoad">
                 <div class="box">
                     <div class="img-contain">
-                        <a href="/post/{{jsBlogs[0]._id}}">
+                        <a routerLink="/post/{{jsBlogs[0]._id}}">
                             <img src="https://immense-eyrie-97426.herokuapp.com/img/logo/{{jsBlogs[0].logo}}" alt="" />
                         </a>
                     </div>
                     <div class="news-content">
-                        <a href="/post/{{jsBlogs[0]._id}}">
+                        <a routerLink="/post/{{jsBlogs[0]._id}}">
                             <h5 class="text-white">
                                 {{jsBlogs[0].title}}
                             </h5>
@@ -198,13 +198,13 @@
                 <ng-template ngFor let-jsBlog [ngForOf]="jsBlogs" let-i="index">
                     <div class="box" *ngIf="i > 0">
                         <div class="img-contain" [ngStyle]="{'width': '140px','height':'100px'}">
-                            <a href="/post/{{jsBlog._id}}">
+                            <a routerLink="/post/{{jsBlog._id}}">
                                 <img src="https://immense-eyrie-97426.herokuapp.com/img/logo/{{jsBlog.logo}}" alt=""
                                     [ngStyle]="{'width': '140px','height':'100px'}" />
                             </a>
                         </div>
                         <div class="news-content">
-                            <a href="/post/{{jsBlog._id}}">
+                            <a routerLink="/post/{{jsBlog._id}}">
                                 <p>
                                     {{jsBlog.title}}
                                 </p>
@@ -220,9 +220,9 @@
 
     <div class="nodejs-box">
         <div class="title">
-            <a href="/category/Nodejs">Nodejs</a>
+            <a routerLink="/category/Nodejs">Nodejs</a>
             <div class="view-all">
-                <a href="/category/Nodejs"><i class="fa fa-bars"><span>All News</span></i></a>
+                <a routerLink="/category/Nodejs"><i class="fa fa-bars"><span>All News</span></i></a>
             </div>
         </div>
 
@@ -231,13 +231,13 @@
                 <div class="col-lg-4 col-md 6 col-sm-12">
                     <div class="box">
                         <div class="img-contain" [ngStyle]="{'width': '200px','height':'120px'}">
-                            <a href="/post/{{nodejsBlog._id}}">
+                            <a routerLink="/post/{{nodejsBlog._id}}">
                                 <img src="https://immense-eyrie-97426.herokuapp.com/img/logo/{{nodejsBlog.logo}}" alt=""
                                     [ngStyle]="{'width': '200px','height':'120px'}" />
                             </a>
                         </div>
                         <div class="news-content">
-                            <a href="/post/{{nodejsBlog._id}}">
+                            <a routerLink="/post/{{nodejsBlog._id}}">
                                 <h5>
                                     {{nodejsBlog.title}}
                                 </h5>
@@ -256,9 +256,9 @@
 
     <div class="mongo-box">
         <div class="title">
-            <a href="/category/Mongodb">Mongo</a>
+            <a routerLink="/category/Mongodb">Mongo</a>
             <div class="view-all">
-                <a href="/category/Mongodb"><i class="fa fa-bars"><span>All News</span></i></a>
+                <a routerLink="/category/Mongodb"><i class="fa fa-bars"><span>All News</span></i></a>
             </div>
         </div>
 
@@ -267,13 +267,13 @@
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="box">
                         <div class="img-contain" [ngStyle]="{'height': '200px'}">
-                            <a href="/post/{{mongodbBlog._id}}">
+                            <a routerLink="/post/{{mongodbBlog._id}}">
                                 <img src="https://immense-eyrie-97426.herokuapp.com/img/logo/{{mongodbBlog.logo}}"
                                     alt="" [ngStyle]="{'height': '200px'}" />
                             </a>
                         </div>
                         <div class="news-content">
-                            <a href="/post/{{mongodbBlog._id}}">
+                            <a routerLink="/post/{{mongodbBlog._id}}">
                                 <h5>
                                     {{mongodbBlog.title}}
                                 </h5>

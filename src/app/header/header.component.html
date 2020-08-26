@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md">
-    <a class="navbar-brand text-white font-weight-bold" href="/">Noob Boy</a>
+    <a class="navbar-brand text-white font-weight-bold" routerLink="/">Noob Boy</a>
     <div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,10 +12,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-5 mr-auto" *ngIf="categoryList">
             <li class="nav-item">
-                <a class="nav-link text-white active" routerLink="/">HOME</a>
+                <a class="nav-link text-white {{currentUrl==''?'active':''}}" routerLink="/">HOME</a>
             </li>
             <li class="nav-item" *ngFor="let category of categoryList">
-                <a class="nav-link text-white " routerLink="/category/{{category.name}}">{{category.name}}</a>
+                <a class="nav-link text-white {{currentUrl == category.name ? 'active': ''}} "
+                    routerLink="/category/{{category.name}}">{{category.name}}</a>
             </li>
         </ul>
     </div>

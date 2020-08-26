@@ -16,13 +16,13 @@
     mb-2    
     " *ngFor="let item of collection.data | paginate:config;let i = 'index'">
         <div class="card-img">
-            <a href="/post/{{item._id}}">
+            <a routerLink="/post/{{item._id}}">
                 <img src="https://immense-eyrie-97426.herokuapp.com/img/logo/{{item.logo}}" alt=""
                     [ngStyle]="{'width': '350px','height':'250px'}" />
             </a>
         </div>
         <div class="card-content">
-            <a href="/post/{{item._id}}">
+            <a routerLink="/post/{{item._id}}">
                 <h5>
                     {{item.title}}
                 </h5>
@@ -36,7 +36,7 @@
             <p class="card-content-sub">
                 {{item.contentSub.substring(0,150)}}...
             </p>
-            <a href="/post/{{item._id}}">
+            <a routerLink="/post/{{item._id}}">
                 Continue Read <i class="fa fa-arrow-right text-success"></i>
             </a>
         </div>
